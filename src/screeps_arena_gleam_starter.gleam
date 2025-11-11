@@ -1,5 +1,14 @@
 import gleam/io
 
-pub fn hello() -> Nil {
-  io.println("Hello from screeps_arena_gleam_starter!")
+pub type State {
+  State
+}
+
+pub fn init() -> State {
+  State
+}
+
+pub fn step(state: State) -> State {
+  io.println("Hello, Screeps Arena!")
+  state
 }
